@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Creative CV – Resume</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <meta name="description" content="Professional resume website" />
+</head>
+<body>
+  <div class="split">
+    <!-- Left content column -->
+    <main class="left">
+      <header class="topbar">
+        <div class="brand">Resume</div>
+        <nav class="topnav">
+          <a href="#about">about</a>
+          <a href="#resume">resume</a>
+          <a href="#contact">contact</a>
+        </nav>
+      </header>
+
+      <section class="hero" id="resume">
+        <h1 class="hero-name">Yash Mane</h1>
+        <p class="hero-role">AWS Enginner</p>
+
+        <div class="contact-block">
+          <p><strong>Phone</strong> 123-456-7890</p>
+          <p><strong>Email</strong> info@mysite.com</p>
+          <p><strong>Address</strong> Satara, MH</p>
+          <p class="links"><a href="#">LinkedIn</a> · <a href="#">HackerRank</a> · <a href="#">GitHub</a></p>
+        </div>
+        <a class="see-cv" href="#about">See full Resume <span aria-hidden>↓</span></a>
+      </section>
+
+      <section id="about" class="section flat">
+        <h2 class="section-title">About</h2>
+        <p>I'm a Cloud Enginner. I have 2 years of experience in AWS Cloud Engineering. I have worked on various projects like Auto Healing Resources.</p>
+      </section>
+
+      <section id="skills" class="section flat">
+        <h2 class="section-title">Skills &amp; Expertise</h2>
+        <ul class="bullets">
+          <li>Programming: Python, Bash</li>
+          <li>AWS: IAM, EC2, VPC, S3, RDS, EBS, EFS, ELB, Labda, CloudWatch.</li>
+        </ul>
+      </section>
+
+      <section id="experience" class="section flat">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="experience-list">
+          <article class="exp">
+            <div class="exp-date">2025 - Present</div>
+            <h3 class="exp-role">AWS Intern</h3>
+            <div class="exp-company">Cygnonex Innovations</div>
+            <em class="exp-loc">Remote</em>
+          </article>
+          <!-- <article class="exp">
+            <div class="exp-date">2035 - 2035</div>
+            <h3 class="exp-role">Content Writer</h3>
+            <div class="exp-company">Unilife</div>
+            <em class="exp-loc">Manhattan, New York</em>
+          </article>
+          <article class="exp">
+            <div class="exp-date">2035 - 2035</div>
+            <h3 class="exp-role">Content Writer Intern</h3>
+            <div class="exp-company">InspirationIT</div>
+            <em class="exp-loc">San Francisco, Cal.</em>
+          </article> -->
+        </div>
+      </section>
+
+      <section id="education" class="section flat">
+        <h2 class="section-title">Education</h2>
+        <article class="edu">
+          <div class="edu-date">2022 - 2025</div>
+          <h3 class="edu-inst">Dnyanshree Institute of Engineering and Technology</h3>
+          <div class="edu-degree">Bachelor of Technology</div>
+          <em class="edu-loc">Satara, India</em>
+        </article>
+
+        <article class="edu">
+          <div class="edu-date">2019 - 2022</div>
+          <h3 class="edu-inst">Yashwantrao Chavan Institute of Science</h3>
+          <div class="edu-degree">HSC</div>
+          <em class="edu-loc">Satara, India</em>
+        </article>
+      </section>
+
+      <section id="achievements" class="section flat">
+        <h2 class="section-title">Certification</h2>
+        <ul class="bullets">
+          <li>Foundation of Cloud IoT Edge ML - NPTEL </li>
+          <li>Cloud Security Engineer Professional - Coursera</li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- Right sticky visual column -->
+    <aside class="right">
+      <a class="btn-download" href="https://youtu.be/7ekHA3k2Uok?si=-cDDKajla2GqM61Rf" download>Jay Shree Ram</a>
+      <div class="photo-frame">
+        <img src="photo.jpg" alt="Profile" />
+      </div>
+    </aside>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.querySelectorAll('a[href^="#"]').forEach((a) => {
+      a.addEventListener('click', (e) => {
+        const href = a.getAttribute('href');
+        if (href && href.startsWith('#')) {
+          e.preventDefault();
+          const el = document.querySelector(href);
+          if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
