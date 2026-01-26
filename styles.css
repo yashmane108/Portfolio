@@ -137,7 +137,7 @@ input:focus, textarea:focus { outline: none; border-color: var(--accent); box-sh
 
 /* Hero */
 .hero-name { font-size: 72px; line-height: 1.1; font-weight: 600; color: var(--ink); margin-bottom: 6px; font-family: cormorantgaramond-semibold, cormorantgaramond, "cormorant garamond", serif; letter-spacing: 0.01em; }
-.hero-role { font-size: 28px; color: #ff0000; margin-bottom: 36px; font-family: 'Montserrat', sans-serif; font-weight: 300; }
+.hero-role { font-size: 28px; color: #0091ff; margin-bottom: 36px; font-family: 'Montserrat', sans-serif; font-weight: 300; }
 .contact-block p { margin-bottom: 10px; }
 .contact-block .links a { color: #1f2937; border-bottom: 1px solid #d1d5db; padding-bottom: 2px; }
 .see-cv { display: inline-flex; align-items: center; gap: 8px; margin-top: 22px; color: #1f2937; }
