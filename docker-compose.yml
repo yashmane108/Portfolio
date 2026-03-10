@@ -3,7 +3,7 @@ services:
     build: .
     container_name: yash_portfolio_container
     ports:
-      - "8080:80"
+      - "9000:80"
     volumes:
       - .:/usr/share/nginx/html
     restart: always
