@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  portfolio-site:
+    build: .
+    container_name: yash_portfolio_container
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/usr/share/nginx/html
+    restart: always
